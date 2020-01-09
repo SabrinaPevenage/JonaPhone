@@ -1,0 +1,153 @@
+h2 {
+    display: grid;
+    background-image: url(../Project/images/home-achtergrondafbeelding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: gainsboro;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* wrapper*/
+main .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main .column {
+    width: 30%;
+}
+
+.column {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+main .column + .column {
+	margin-left: 5%;
+}
+
+.column img {
+	width: 100%;
+}
+
+h3 {
+    padding-left: 2rem;
+    padding-top: 3rem;
+    font-size: 0.85rem;
+}
+
+.button {
+    padding: 0.4rem;
+    padding-left: 0rem;
+}
+
+.button a {
+    border: 3px solid #ffd100;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+.wrapper ~ h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+h4 {
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+h4 + p, h4, p ~ i {
+    background-color: gainsboro;
+}
+
+p ~ i {
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/*media queries*/
+@media only screen and (min-width: 30rem) {
+    h2 {
+        font-size: 4rem;
+        padding-top: 25rem;
+    }
+
+    h3 {
+        padding-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 2rem;
+        padding-left: 3rem;
+    }
+
+    .button a{
+        padding: 1rem; 
+        font-size: 1rem;
+    }
+
+    .wrapper ~ h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    p ~ i {
+        font-size: 10rem;
+    }
+}
+
+@media only screen and (min-width: 70rem) {
+    main{
+        margin: 4rem;
+    }
+    
+    h3{
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+
+    .column img {
+        width: 60%;   
+    }
+
+    .button {
+        padding-left: 4rem;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+}

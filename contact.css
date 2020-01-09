@@ -1,0 +1,207 @@
+h2 {
+    display: grid;
+    background-image: url(../Project/images/home-achtergrondafbeelding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: gainsboro;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 15rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+h3{
+    display: none;
+}
+
+/* contactformulier*/
+.contact-form {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.input-veld {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+}
+
+.input-veld, .message-box {
+    width: 45%;
+}
+
+.input-veld input, .message-box textarea{
+    margin: 1rem;
+    border: 0;
+    border-bottom: 2px solid #ffd100;
+    padding: 1rem;
+}
+
+.message-box textarea {
+    height: 22rem;
+    width: 100%;
+    font-size: 1rem;;
+}
+
+::-webkit-input-placeholder{
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+}
+
+.button {
+    background: #ffd100;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*wrapper*/
+main .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main .column {
+    width: 50%;
+}
+
+.column {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+main h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #ffd100;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+main .column + .column {
+	margin-left: 5%;
+}
+
+p {
+    font-size: 1rem;
+    background: gainsboro;
+    text-align: center;
+    padding: 1rem;
+}
+
+p ~ i {
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+pre {
+    font-size: 1.1rem;
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*google maps*/
+.mapouter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+#gmap_canvas {
+    width: 100%;
+    height: 40rem;
+}
+
+/*footer*/
+footer p {
+    background: lightyellow;
+}
+
+/* media queries */
+@media only screen and (min-width: 50rem) {
+    h2 {
+        padding-top: 25rem;
+    }
+
+    h3 {
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color: #ffd100;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        justify-content: center;
+        padding: 10rem;
+    }
+
+    .input-veld {
+        margin-right: 4rem;
+    }
+
+    .input-veld, .message-box {
+        width: 30%;
+    }
+
+    .input-veld input, .message-box textarea{
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .message-box textarea {
+        height: 27rem;
+        font-size: 1.5rem;
+    }
+
+    ::-webkit-input-placeholder{
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    pre {
+        font-size: 2rem;
+    }
+
+    p ~ i {
+        font-size: 10rem;
+    }
+
+    input[type="text"] {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 70rem) {
+    main{
+        margin: 4rem;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+h2 {
+    display: grid;
+    background-image: url(../Project/images/home-achtergrondafbeelding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: gainsboro;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 15rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* grid*/
+.grid > div{
+    background-color: #ffd100;
+    border: 2px solid #ffd100;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    word-spacing: 15rem;
+    padding-top: 0.5rem;
+}
+
+.grid > div:first-child {
+    grid-column: 1/span 2;
+    background-color: white;
+    border: none;
+}
+
+.grid {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 20% 20%;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-auto-rows: minmax(3rem, auto);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* media queries */
+@media only screen and (min-width: 30rem) {
+    h2 {
+        padding-top: 25rem;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .grid > div{
+        font-size: 1.5rem;
+    }
+
+}
